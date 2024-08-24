@@ -1,0 +1,150 @@
+@media (max-width:1024px) {
+    .bottomHeaderRightSide>.headerIcon>i {
+        font-size: 22px;
+        color: rgb(81, 77, 77);
+        margin: 0 8px;
+    }
+
+    .sideBarBtn {
+        display: block;
+    }
+
+    .headerIcon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headerIconName {
+        font-size: 8px;
+    }
+
+    .navLinks>ul {
+        display: none;
+        margin-left: 0;
+    }
+
+    .bottomHeader {
+        padding: 0 2rem;
+    }
+
+    .cart {
+        min-width: 210px;
+    }
+
+    .categoryCircles>img {
+        height: 95px;
+        width: 95px;
+    }
+
+    .arrow-icon {
+        display: none;
+    }
+
+    .reviewsAndRatingContainer,
+    .bottomBanner {
+        width: 92vw;
+    }
+
+    .footer {
+        background-color: rgb(255, 175, 182);
+        padding: 2.5rem 3rem 0 0;
+    }
+
+    .topFooter {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bottomFooter {
+        flex-direction: column;
+    }
+
+    .bottomFooterLeftSide,
+    .bottomFooterRightSide {
+        width: 100%;
+    }
+
+    .bottomFooterLeftSide {
+        flex-direction: column-reverse;
+        margin: 3rem 0 2rem;
+        padding: 0 0 2rem;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .bottomFooterRightSide {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .companyName {
+        font-size: 12px;
+        margin: 1rem 0;
+    }
+
+    .bottomFooter {
+        padding: 2rem 0 1rem 2rem;
+    }
+}
+
+
+@media (max-width:718px) {
+
+    .footer {
+        padding: 3rem 1.5rem 2rem;
+    }
+
+    .secondColumn,
+    .thiredColumn,
+    .fourthColumn {
+        padding: 0;
+        margin: 1rem 0;
+    }
+
+    .topFooter {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid white;
+        padding-bottom: 0.5rem;
+
+    }
+
+    .footerMediaIcons {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -3rem;
+    }
+
+    .bottomFooter {
+        padding: 0;
+    }
+
+    .secondColumn {
+        margin-top: 7rem;
+    }
+
+    .footerList {
+        display: none;
+    }
+
+    .footerHeading {
+        margin-bottom: 0;
+        font-size: 16px;
+        border-top: 1px solid white;
+        padding: 1.5rem 0 0.5rem;
+        height: 0px;
+    }
+
+    .bottomFooterLeftSide {
+        margin: 1rem 0 1rem;
+    }
+
+    .bottomBannerDescription>h4 {
+        font-size: 16px;
+    }
+
+    #hidenPassage,
+    .bottomBannerDescription>p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

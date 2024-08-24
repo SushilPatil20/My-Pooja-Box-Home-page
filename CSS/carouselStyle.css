@@ -1,0 +1,150 @@
+.carousel {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: 3rem auto;
+}
+
+.carouselWrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.carouselItem {
+    box-sizing: border-box;
+    margin: 0 8px;
+    flex: 0 0 auto;
+}
+
+.carousel img {
+    width: 200px;
+    height: 40%;
+    display: block;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    box-shadow: rgba(0, 0, 0, 0.043) 0px 2.1px 1.3px,
+        rgba(0, 0, 0, 0.055) 0px 5.9px 4.2px,
+        rgba(0, 0, 0, 0.063) 0px 12.6px 9.5px,
+        rgba(0, 0, 0, 0.1) 0px 25px 20px
+}
+
+button.prev:hover,
+button.next:hover {
+    background-color: black;
+
+}
+
+
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev>i,
+button.next>i {
+    font-size: 16px;
+}
+
+.reviewContainer {
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.reviewDetails {
+    flex-grow: 1;
+}
+
+.reviewerName {
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ratingTime {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.rating {
+    color: #f39c12;
+    font-size: 16px;
+    margin-right: 12px;
+}
+
+.time {
+    font-size: 12px;
+    color: #999;
+}
+
+.reviewMessage {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #333;
+    width: 80%;
+}
+
+
+.carousel-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 5px;
+    background-color: #9a9797;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease, transform 0.3s ease;
+}
+
+.dot:nth-child(1),
+.dot:nth-child(5) {
+    height: 2px;
+    width: 2px;
+}
+
+.dot:nth-child(2),
+.dot:nth-child(4) {
+    height: 5px;
+    width: 5px;
+}
+
+.active {
+    background-color: #484747;
+    transform: scale(1);
+}
